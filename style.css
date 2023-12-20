@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 90px;
+    padding-top: 100px;
+    font-family: 'work sans';
+    gap: 160px;
+}
+.left{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.left h1{
+    font-size: 9vw;
+    font-weight: 400;
+    line-height: 8.5vw;
+}
+.bot-left{ 
+    width: 100%;
+}
+.color{
+    width: fit-content;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 2px solid #000;
+    gap: 5px;
+}
+.color h5{
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+.c1{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #7B6651;
+}
+.c2{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #353331;
+}
+.left h2{
+    margin-top: 60px;
+    margin-bottom: 15px;
+    font-size: 2vw;
+    font-weight: 600;
+}
+.left p{
+    font-size: 1vw;
+    width: 65%;
+    font-weight: 500;
+    color: #444;
+}
+.right{
+    height: 90%;
+    width: 28%;
+    position: relative ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-top{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.right-top h4{
+    font-size: 25px;
+    font-weight: 500;
+}
+.right-top h5{
+    font-size: 13px;
+    font-weight: 600;
+}
+.right img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+.black{
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    color: #fff;
+    background-color: #222222;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 85%;
+    top: 32%;
+}
+.black h5{
+    font-size: 16px;
+    font-weight: 500;
+}
+.rotate{
+    position: absolute;
+    left: -20%;
+    bottom: 4%;
+    rotate: -90deg;
+    transform-origin: 0 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+@media (max-width:600px) {
+    .main{
+        height: 100%;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 40px;
+        padding-top: 20px;
+        gap: 20px;
+    }
+    .left{
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        gap: 5vh;
+    }
+    .left h1{
+        font-size: 20vw;
+        line-height: 18vw;
+    }
+    .bot-left{ 
+        width: 100%;
+    }
+    .color{
+        width: fit-content;
+        gap: 3px;
+    }
+    .color h5{
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    .c1{
+        height: 15px;
+        width: 15px;
+    }
+    .c2{
+        height: 15px;
+        width: 15px;
+    }
+    .left h2{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 4vw;
+    }
+    .left p{
+        font-size: 2vw;
+        width: 85%;
+
+    }
+    .right{
+        height: 55%;
+        width: 100%;
+        position: relative ;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .right-top{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 0px;
+    }
+    .right-top h4{
+        font-size: 18px;
+    }
+    .right-top h5{
+        font-size: 10px;
+    }
+    .right img{
+        border-radius: 5%;
+    }
+    .black{
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        left: 85%;
+        top: -10%;
+    }
+    .black h5{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .rotate{
+        position: absolute;
+        left: 0%;
+        top: -7%;
+        rotate: 0deg;
+        font-size: 16px;
+    }
+}
